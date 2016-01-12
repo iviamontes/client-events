@@ -24,9 +24,9 @@ trait RequestTrait
         try
         {
             $res = $client->$method($this->baseUrl() . $uri, [
-                'debug'     => $debug,
-                'body'      => $payload,
-                'headers'   => $this->header()
+                'debug'         => $debug,
+                'form_params'   => $payload,
+                'headers'       => $this->header()
             ]);
 
             return json_decode($res->getBody());

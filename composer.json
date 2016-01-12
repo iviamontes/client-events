@@ -1,0 +1,27 @@
+{
+  "name": "iviamontes/client-events",
+  "description": "A package which provides a simple wrapper for events",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Ismael Viamontes",
+      "email": "ismael.viamontes@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "php": ">=5.5.9",
+    "illuminate/support": "~5.0",
+    "illuminate/http": "~5.0",
+    "illuminate/auth": "~5.0",
+    "illuminate/database": "~5.0",
+    "illuminate/console" : "~5.0",
+    "guzzlehttp/guzzle": "^6.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "iviamontes\\Events\\": "src/",
+      "iviamontes\\Events\\App\\" : "src/App"
+    }
+  }
+}
